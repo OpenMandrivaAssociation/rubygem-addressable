@@ -2,7 +2,7 @@
 
 Summary:    A replacement for the URI implementation of Ruby's standard library
 Name:       rubygem-%{oname}
-Version:    2.2.2
+Version:    2.2.4
 Release:    %mkrel 1
 Group:      Development/Ruby
 License:    MIT
