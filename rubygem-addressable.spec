@@ -3,8 +3,7 @@
 
 Summary:	A replacement for the URI implementation of Ruby's standard library
 Name:		rubygem-%{rbname}
-
-Version:	2.2.4
+Version:	2.2.8
 Release:	1
 Group:		Development/Ruby
 License:	MIT
@@ -35,14 +34,13 @@ Documents, RDoc & RI documentation for %{name}.
 %install
 %gem_install
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %dir %{ruby_gemdir}/gems/%{rbname}-%{version}
 %dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib
 %dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/addressable
+%dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/addressable/idna
 %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/addressable/*.rb
+%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/addressable/idna/*.rb
 %dir %{ruby_gemdir}/gems/%{rbname}-%{version}/spec
 %dir %{ruby_gemdir}/gems/%{rbname}-%{version}/spec/addressable
 %{ruby_gemdir}/gems/%{rbname}-%{version}/spec/addressable/*.rb
@@ -52,6 +50,6 @@ rm -rf %{buildroot}
 
 %files doc
 %doc %{ruby_gemdir}/doc/%{rbname}-%{version}
-%doc %{ruby_gemdir}/gems/%{rbname}-%{version}/README
+%doc %{ruby_gemdir}/gems/%{rbname}-%{version}/README.md
 %dir %{ruby_gemdir}/gems/%{rbname}-%{version}/website
 %{ruby_gemdir}/gems/%{rbname}-%{version}/website/*.html
