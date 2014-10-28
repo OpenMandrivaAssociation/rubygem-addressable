@@ -35,21 +35,21 @@ Documents, RDoc & RI documentation for %{name}.
 %gem_install
 
 %files
-%dir %{ruby_gemdir}/gems/%{rbname}-%{version}
-%dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib
-%dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/addressable
-%dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/addressable/idna
-%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/addressable/*.rb
-%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/addressable/idna/*.rb
-%dir %{ruby_gemdir}/gems/%{rbname}-%{version}/spec
-%dir %{ruby_gemdir}/gems/%{rbname}-%{version}/spec/addressable
-%{ruby_gemdir}/gems/%{rbname}-%{version}/spec/addressable/*.rb
-%dir %{ruby_gemdir}/gems/%{rbname}-%{version}/tasks
-%{ruby_gemdir}/gems/%{rbname}-%{version}/tasks/*.rake
-%{ruby_gemdir}/specifications/%{rbname}-%{version}.gemspec
+%dir %{gem_dir}/gems/%{rbname}-%{version}
+%dir %{gem_dir}/gems/%{rbname}-%{version}/lib
+%dir %{gem_dir}/gems/%{rbname}-%{version}/lib/addressable
+%dir %{gem_dir}/gems/%{rbname}-%{version}/lib/addressable/idna
+%{gem_dir}/gems/%{rbname}-%{version}/lib/addressable/*.rb
+%{gem_dir}/gems/%{rbname}-%{version}/lib/addressable/idna/*.rb
+%dir %{gem_dir}/gems/%{rbname}-%{version}/spec
+%dir %{gem_dir}/gems/%{rbname}-%{version}/spec/addressable
+%{gem_dir}/gems/%{rbname}-%{version}/spec/addressable/*.rb
+%dir %{gem_dir}/gems/%{rbname}-%{version}/tasks
+%{gem_dir}/gems/%{rbname}-%{version}/tasks/*.rake
+%{gem_dir}/specifications/%{rbname}-%{version}.gemspec
 
 %files doc
-%doc %{ruby_gemdir}/doc/%{rbname}-%{version}
-%doc %{ruby_gemdir}/gems/%{rbname}-%{version}/README.md
-%dir %{ruby_gemdir}/gems/%{rbname}-%{version}/website
-%{ruby_gemdir}/gems/%{rbname}-%{version}/website/*.html
+%doc %{gem_dir}/doc/%{rbname}-%{version}
+%doc %{gem_dir}/gems/%{rbname}-%{version}/README.md
+%dir %{gem_dir}/gems/%{rbname}-%{version}/website
+%{gem_dir}/gems/%{rbname}-%{version}/website/*.html
