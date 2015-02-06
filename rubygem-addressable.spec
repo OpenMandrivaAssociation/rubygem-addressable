@@ -4,7 +4,7 @@
 Summary:	A replacement for the URI implementation of Ruby's standard library
 Name:		rubygem-%{rbname}
 Version:	2.2.8
-Release:	1
+Release:	2
 Group:		Development/Ruby
 License:	MIT
 URL:		http://addressable.rubyforge.org/
