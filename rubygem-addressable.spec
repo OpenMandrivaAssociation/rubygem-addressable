@@ -7,7 +7,7 @@ Version:	2.2.8
 Release:	2
 Group:		Development/Ruby
 License:	MIT
-URL:		http://addressable.rubyforge.org/
+URL:		https://addressable.rubyforge.org/
 Source0:	http://rubygems.org/gems/%{rbname}-%{version}.gem
 BuildRequires:	rubygems 
 BuildArch:	noarch
